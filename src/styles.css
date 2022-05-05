@@ -1,10 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500&display=swap');
+
+
+
 *, *::before, *::after {
     box-sizing: border-box;
 }
 
 body {
     margin: 0;
-    background: rgba(225,225,225)
+    background: rgba(225,225,225);
+    
 
 }
 
@@ -13,9 +18,13 @@ body {
     margin-top: 0.5rem;
     margin-bottom: 2rem;
     justify-content: center;
-    grid-template-columns: repeat(4, 6rem);
-    grid-template-rows: minmax(7rem, auto) repeat(5, 6rem);
+    grid-template-columns: repeat(4, 4.5rem);
+    grid-template-rows: minmax(6rem, auto) repeat(5, 4rem);
 
+}
+
+#equals {
+    background-color: aqua;
 }
 
 .calculator-grid button {
@@ -23,14 +32,23 @@ body {
     font-size: 2rem;
     border-radius: 10px;
     border: none;
+    color:rgb(78, 78, 207);
+    font-family: 'Oswald', sans-serif;
+    width:50px;
+    font-weight: 500;
+    height: 50px;
     margin-right: 2.5px;
     margin-top: 2.5px;
     margin-left: 2.5px;
     margin-bottom: 2.5px;
-    box-shadow: 0 0 5px 3px #6e6e6e;
+    box-shadow: 0 0 5px 3px #a9a9a9;
     outline: none;
     background-color: rgba(260,260,260,.85);
 
+}
+
+.equals {
+    background-color: aquamarine;
 }
 
 .calculator-grid button:hover, 
@@ -44,9 +62,13 @@ body {
 }
 
 .output {
+    height:240px;
+    width: 270px;
+    margin-bottom: 5px;
     border-radius: 10px;
     grid-column: 1 / -1;
-    background-color: rgb(40, 40, 40);
+    background-color: rgb(25, 25, 25);
+    font-family: 'Oswald', sans-serif;
     display: flex;
     flex-direction: column;
     align-items: flex-end;

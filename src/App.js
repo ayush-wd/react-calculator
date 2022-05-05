@@ -151,6 +151,7 @@ function App() {
         </div>
         <div className="current-operand">{formatOperand(currentOperand)}</div>
       </div>
+   
       <button
         
         onClick={() => dispatch({ type: ACTIONS.CLEAR })}
@@ -176,11 +177,12 @@ function App() {
       <DigitButton digit="" dispatch={dispatch} />
       <DigitButton digit="." dispatch={dispatch} />
       <button
-        
+        id="equals"
         onClick={() => dispatch({ type: ACTIONS.EVALUATE })}
       >
         =
       </button>
+    
     </div>
   )
 }
